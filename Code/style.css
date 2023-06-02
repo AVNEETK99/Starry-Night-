@@ -1,0 +1,460 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(223, 193, 193);
+    width: 100%;
+    height: 65px;
+    position: sticky;
+    top:0px;
+    z-index:1;
+}
+.header-left{
+    width: 20%;
+    text-align: right;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.header-left a {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: rgb(29, 5, 51);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+.header-left-p a{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.header-left-p span{
+    color: rgb(77, 57, 96);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.header-left-p:hover{
+    text-decoration: underline;
+    color: rgb(9, 64, 37);
+}
+.header-center{
+    width: 40%;
+    text-align: left;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left: 10px;
+    position: relative;
+}
+.header-center-input{
+    margin-top: 10px;
+    height: 36px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    cursor: auto;
+    border-radius: 2px;
+}
+.fa-wand-magic-sparkles{
+ position: absolute;
+ top: 32%;
+ left:94%;
+ font-size: 18px;
+ color: rgb(90, 9, 85);   
+}
+.login{
+    position: relative;
+    left: 45px;
+    margin-top: 17px;
+}
+.login_btn{
+    color: rgb(13, 66, 78);
+    border-radius: 2px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    height: 32px;
+    letter-spacing: 1px;
+    padding: 6px 40px;
+    font-weight: bold;
+    margin: 0px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+.more{
+    position: relative;
+    margin:17px;
+}
+.cart{
+    margin-top: 17px;
+    margin-right: 60px;
+}
+.none{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.more-icon{
+    color: rgb(37, 6, 6);
+    margin-left: 15px;
+    padding: 20px;
+}
+.more_lan{
+color: white;
+font-size: 15px;
+cursor: pointer;
+}
+.pointer{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+    left: 80%;
+
+}
+.fa-chevron-down:hover{
+transform: rotate(180deg);
+}
+.more_dropdown,.login_dropdown{
+    position: relative;
+    top: 12px;
+}
+.login_dropdown_list,.more_dropdown_list{
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    width: max-content;
+    box-shadow: 0 4px 16px - rgb(0 0 0 / 20%);
+    min-width: 240px;
+    transform: translate(-30px);
+}
+
+.login_drop_li{
+    padding: 16px 20px;
+    border-bottom: 1px solid plum;
+    font-size: 14px;
+    cursor: pointer;
+}
+.login_drop_li .fa-solid{
+    color: rgb(36, 14, 57);
+    padding-right: 10px;
+}
+.login_drop_li:hover{
+    background: white;
+}
+.login_drop_li:first-child{
+    padding: 20px;
+}
+.login_drop_li:last-child{
+    padding: 20px;
+}
+.login:hover .login_dropdown ,.more:hover .more_dropdown{
+    display: block;
+}
+.sign_up{
+    text-decoration: none;
+    color: rgb(27, 13, 41);
+}
+.sign_up:hover{
+    text-decoration: underline;
+}
+.sign_Li{
+    justify-content: space-between;
+    font-size: 14px;
+}
+.new_login{
+    font-weight: bold;
+}
+.cart_lan .fa-cart-shopping{
+    padding-right: 12px;
+    padding-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+/*--Category Section--*/
+.category-row{
+    display: flex;
+    justify-content:space-evenly;
+    width:100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.category-col{
+    padding:10px 0;
+    cursor: pointer;
+    color: rgb(26, 7, 43);
+}
+.category-col img{
+    width: 75px;
+    height:75px;
+}
+.category-col h5:hover{
+    color: rgb(138, 13, 166);
+}
+.dropdown{
+    background-color: whitesmoke;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px plum;
+    z-index: 1;
+}
+.dropdown-content .header{
+    background: gainsboro;
+    padding: 0px;
+    color: white;
+}
+.col{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: white;
+    height: auto;
+
+}
+.col a{
+    float: none;
+    color: black;
+    padding: 8px;
+    border-radius: 2px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.col a:hover{
+    background-color: rgb(225, 150, 230);
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+.product-title {
+    /* Add your desired styles here */
+    font-size: 24px;
+    color: #000;
+    /* Add more styles as needed */
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition-delay: 2s;
+}
+.slider img{
+    width :  100%;
+    height : 1000px;
+}
+@keyframes slider{
+    0%{
+        left: 0px;
+    }
+    20%{
+        left: 0px;
+    }
+    40%{
+        left: -1520px;
+    }
+    60%{
+        left: -3040px;
+    }
+    80%{
+        left: -4560px;
+    }
+    100%{
+        left: -6080px;
+    }
+}
+.card{
+    box-shadow: rgb(225, 150, 230) 0px 0px 5px 1px;
+    padding: 10px 0px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+.common-heading{
+    display: flex;
+    justify-content: space-between;
+width: 100%;
+padding: 5px 20px;
+margin-top: 20px;
+box-shadow: 0 1px 1px 0 rgb(0, 0, 0 / 16%);
+}
+.common-heading-left h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: auto;
+}
+.common-heading-right button{
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgb(66, 5, 86);
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+.common-row-col-deals{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-height: 366px;
+    margin: 10px 0px;
+}
+.common-col{
+    text-align: center;
+    line-height: 22px;
+}
+.common-col img{
+    width: 120px;
+    height: 150px;
+    transition: 300ms;
+}
+.common-col img:hover{
+    transform: scale(1.1);
+}
+.common-col h3 h4 h6{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.common-col h3{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.common-col h4{
+    color: rgb(117, 15, 56);
+    font-size: 14px;
+    font-weight: 300;
+}
+.common-col h6{
+    color: rgb(20, 66, 66);
+    font-size: 12px;
+    font-weight: 100;
+}
+#add-cart:hover{
+    color: rgb(66, 5, 86);
+}
+footer{
+    background-color: rgb(62, 12, 62);
+    height: 350;
+}
+.footer-row{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 30px 60px;
+}
+.footer-row2{
+    display: flex;
+    border-top: 1px solid rgb(252, 186, 186);
+    justify-content: space-evenly;
+}
+.footer-col-1{
+    width: 15%;
+}
+.footer-col-2{
+    width: 15%;
+}
+.footer-col-3{
+    width: 15%;
+}
+.footer-col-4{
+    width: 10%;
+}
+.footer-col-5{
+    width: 20%;
+    border-left: 1px solid rgb(77, 12, 77);
+    height: 120px;
+    padding-left: 25px;
+}
+.footer-col-6{
+    width:20%;
+    padding-left: 50px;
+}
+.footer-heading p{
+    color:pink;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.footer-list a{
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}
+.footer-list p{
+    text-align: left;
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-weight: 100px;
+    padding: 5px 0px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.footer-list-address p{
+    text-align: left;
+    display: block;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: 100px;
+}
+.footer-list-address span{
+    color: rgb(22, 8, 35);
+    cursor: pointer;
+}
+.footer-row2-col p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: .7px;
+    font-weight: 100px;
+}
+.fa-cart-shopping,.fa-rectangle-ad,.fa-gift,.fa-circle-info{
+    color: palevioletred;
+    cursor: pointer;
+    padding-right: 10px;
+    font-size: 15px;
+}
+.pay_img{
+    
+    width: 250px; 
+ 
+}
+.start{
+    font-weight: bold;
+}
